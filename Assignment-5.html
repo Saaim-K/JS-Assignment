@@ -6,180 +6,277 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment - 5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <script>
 
         //-------------------- Question # 1 --------------------
-        // document.write("<center>"+"<h1>"+"sssss"+"</h1>"+"</center>")
-        // let a = +prompt('Enter number a');
-        // let b = +prompt('Enter number b');
-        // document.write('Sum of ' + a + ' ' + '&' + ' ' + b + ' ' + 'is' + ' ' + (a + b));
+        function question1(){
+        let a = +prompt('Enter number a');
+        let b = +prompt('Enter number b');
+        document.write('Sum of ' + a + ' ' + '&' + ' ' + b + ' ' + 'is' + ' ' + (a + b));
+    }
         // -------------------- Question # 1 --------------------
 
 
 
         // -------------------- Question # 2 --------------------
-        // let a = +prompt('Enter number a');
-        // let b = +prompt('Enter number b');
-        // document.write('Addition of ' + a + ' ' + '&' + ' ' + b + ' ' + 'is' + ' ' + (a + b)+"<br>");
-        // document.write('Subtraction of ' + a + ' ' + '&' + ' ' + b + ' ' + 'is' + ' ' + (a - b)+"<br>");
-        // document.write('Multiplication of ' + a + ' ' + '&' + ' ' + b + ' ' + 'is' + ' ' + (a * b)+"<br>");
-        // document.write('Division of ' + a + ' ' + '&' + ' ' + b + ' ' + 'is' + ' ' + (a / b)+"<br>");
-        // document.write('Modulus of ' + a + ' ' + '&' + ' ' + b + ' ' + 'is' + ' ' + (a % b)+"<br>");
-
+        function question2(){
+        let a = +prompt('Enter number a');
+        let b = +prompt('Enter number b');
+        document.write('Addition of ' + a + ' ' + '&' + ' ' + b + ' ' + 'is' + ' ' + (a + b)+"<br>");
+        document.write('Subtraction of ' + a + ' ' + '&' + ' ' + b + ' ' + 'is' + ' ' + (a - b)+"<br>");
+        document.write('Multiplication of ' + a + ' ' + '&' + ' ' + b + ' ' + 'is' + ' ' + (a * b)+"<br>");
+        document.write('Division of ' + a + ' ' + '&' + ' ' + b + ' ' + 'is' + ' ' + (a / b)+"<br>");
+        document.write('Modulus of ' + a + ' ' + '&' + ' ' + b + ' ' + 'is' + ' ' + (a % b)+"<br>");
+    }
         // -------------------- Question # 2 --------------------
 
 
 
         // -------------------- Question # 3 --------------------
-        // let a = +prompt('Enter any Number');
-        // document.write('Variable after declaration is: ' + ' ' + a + "<br>");
-        // document.write('Initial value taken from user is: ' + ' ' + a + "<br>");
-        // b = ++a;
-        // document.write('Value after increment is: ' + ' ' + b + "<br>");
-        // c = a + 7;
-        // document.write('Value after addition of 7 is: ' + ' ' + c + "<br>");
-        // d = --c;
-        // document.write('Value after decrement is: ' + ' ' + d + "<br>");
-        // e = d % 3;
-        // document.write('The remainder is: ' + ' ' + e);
+        function question3(){
+        let a = +prompt('Enter any Number');
+        document.write('Variable after declaration is: ' + ' ' + a + "<br>");
+        document.write('Initial value taken from user is: ' + ' ' + a + "<br>");
+        b = ++a;
+        document.write('Value after increment is: ' + ' ' + b + "<br>");
+        c = a + 7;
+        document.write('Value after addition of 7 is: ' + ' ' + c + "<br>");
+        d = --c;
+        document.write('Value after decrement is: ' + ' ' + d + "<br>");
+        e = d % 3;
+        document.write('The remainder is: ' + ' ' + e);
+    }
         // -------------------- Question # 3 --------------------
 
 
 
         // -------------------- Question # 4 --------------------
-        // let movieTicket = +prompt('Enter price of ticket');
-        // document.write('Cost of 1 Ticket is ' + movieTicket+'<br>');
-        // let noofTicket = +prompt('Enter number of ticket');
-        // document.write('Number of ticket purchased is ' + noofTicket+'<br>');
-        // let totalCost = movieTicket * noofTicket;
-        // document.write('Total cost of ' + noofTicket + ' tickets is ' + totalCost);
+        function question4() {
+            let movieTicket = +prompt('Enter price of ticket');
+            document.write('Cost of 1 Ticket is ' + movieTicket + '<br>');
+            let noofTicket = +prompt('Enter number of ticket');
+            document.write('Number of ticket purchased is ' + noofTicket + '<br>');
+            let totalCost = movieTicket * noofTicket;
+            document.write('Total cost of ' + noofTicket + ' tickets is ' + totalCost);
+        }
         // -------------------- Question # 4 --------------------
 
 
 
         // -------------------- Question # 5 --------------------
-        // let table=+prompt('Enter table you want');
-        // let endTable=+prompt('Enter till where you want the table');
-        // for(var a=1;a<=endTable;a++){
-        //     document.write(table+' '+'x'+' '+a+' '+'='+' '+(table*a)+'<br>')
-        // }
+        function question5() {
+            let table = +prompt('Enter table you want');
+            let endTable = +prompt('Enter till where you want the table');
+            for (var a = 1; a <= endTable; a++) {
+                document.write(table + ' ' + 'x' + ' ' + a + ' ' + '=' + ' ' + (table * a) + '<br>')
+            }
+        }
         // -------------------- Question # 5 --------------------
 
 
 
         // -------------------- Question # 6 --------------------
-        // document.write('<h1>' + 'Temperature Converter' + '</h1>')
-        // let celsius = +prompt('Enter Temperature in °C');
-        // let ftoc = (celsius * (9 / 5) + 32).toFixed(2);
-        // document.write(celsius + '°C' + ' to Farenheit is ' + ftoc + '<br>')
-        // let Farenheit = +prompt('Enter Temperature in °F');
-        // let ctof = ((Farenheit - 32) * (5 / 9)).toFixed(2);
-        // document.write(Farenheit + '°C' + ' to Celsius is ' + ctof)
+        function question6() {
+            document.write('<h1>' + 'Temperature Converter' + '</h1>')
+            let celsius = +prompt('Enter Temperature in °C');
+            let ftoc = (celsius * (9 / 5) + 32).toFixed(2);
+            document.write(celsius + '°C' + ' to Farenheit is ' + ftoc + '<br>')
+            let Farenheit = +prompt('Enter Temperature in °F');
+            let ctof = ((Farenheit - 32) * (5 / 9)).toFixed(2);
+            document.write(Farenheit + '°C' + ' to Celsius is ' + ctof)
+        }
         // -------------------- Question # 6 --------------------
 
 
 
         // -------------------- Question # 7 --------------------
-        // let item1 = +prompt('Enter price of item 1');
-        // document.write('Price of item 1 is ' + item1 + '<br>');
-        // let qitem1 = +prompt('Enter quantity of item 1');
-        // document.write('Quantity of item 1 is ' + qitem1 + '<br>');
-        // let item2 = +prompt('Enter price of item 2');
-        // document.write('Price of item 2 is ' + item2 + '<br>');
-        // let qitem2 = +prompt('Enter quantity of item 2');
-        // document.write('Quantity of item 2 is ' + qitem2 + '<br>');
-        // let ship = +prompt('Enter shipping charges');
-        // document.write('Shipping Charges ' + ship + '<br>');
-        // let totalCost=(item1*qitem1)+(item2*qitem2)+ship;
-        // document.write('Total cost of your order is ' + totalCost);
+        function question7() {
+            let item1 = +prompt('Enter price of item 1');
+            document.write('Price of item 1 is ' + item1 + '<br>');
+            let qitem1 = +prompt('Enter quantity of item 1');
+            document.write('Quantity of item 1 is ' + qitem1 + '<br>');
+            let item2 = +prompt('Enter price of item 2');
+            document.write('Price of item 2 is ' + item2 + '<br>');
+            let qitem2 = +prompt('Enter quantity of item 2');
+            document.write('Quantity of item 2 is ' + qitem2 + '<br>');
+            let ship = +prompt('Enter shipping charges');
+            document.write('Shipping Charges ' + ship + '<br>');
+            let totalCost = (item1 * qitem1) + (item2 * qitem2) + ship;
+            document.write('Total cost of your order is ' + totalCost);
+        }
         // -------------------- Question # 7 --------------------
 
 
 
         // -------------------- Question # 8 --------------------
-        // document.write('<h1>' + 'Marks Sheet' + '</h1>'+'<br>')
-        // let Total = +prompt('Enter total marks');
-        // let tvalue = Math.abs(Total);
-        // document.write('Total Marks : ' + tvalue + '<br>')
-        // let obMarks = +prompt('Enter marks obtained');
-        // let tobvalue = Math.abs(obMarks);
-        // document.write('Obtained Marks : ' + tobvalue + '<br>')
-        // let percent=((tobvalue/tvalue)*100).toFixed(3);
-        // document.write('Percentage : ' + percent+'%')
+        function question8() {
+            document.write('<h1>' + 'Marks Sheet' + '</h1>' + '<br>')
+            let Total = +prompt('Enter total marks');
+            let tvalue = Math.abs(Total);
+            document.write('Total Marks : ' + tvalue + '<br>')
+            let obMarks = +prompt('Enter marks obtained');
+            let tobvalue = Math.abs(obMarks);
+            document.write('Obtained Marks : ' + tobvalue + '<br>')
+            let percent = ((tobvalue / tvalue) * 100).toFixed(3);
+            document.write('Percentage : ' + percent + '%')
+        }
         // -------------------- Question # 8 --------------------
 
 
 
         // -------------------- Question # 9 --------------------
-        // function convert() {
-        //     let dollar = document.querySelector('#dollar').value;
-        //     let ndollar = document.querySelector('#ndollar').value;
-        //     let riyal = document.querySelector('#riyal').value;
-        //     let nriyal = document.querySelector('#nriyal').value;
-        //     let pkr = (dollar * ndollar) + (riyal * nriyal);
-        //     document.querySelector('#convalue').innerHTML = 'Currency in PKR is:' + ' ' + 'Rs ' + pkr;
-        // }
+        function question9() {
+            function convert() {
+                let dollar = document.querySelector('#dollar').value;
+                let ndollar = document.querySelector('#ndollar').value;
+                let riyal = document.querySelector('#riyal').value;
+                let nriyal = document.querySelector('#nriyal').value;
+                let pkr = (dollar * ndollar) + (riyal * nriyal);
+                document.querySelector('#convalue').innerHTML = 'Currency in PKR is:' + ' ' + 'Rs ' + pkr;
+            }
+        }
         // -------------------- Question # 9 --------------------
 
 
 
         // -------------------- Question # 10 --------------------
-        // let input1 = +prompt('Enter any number');
-        // let calc=((input1+5)*10)/2;
-        // document.write(calc);
+        function question10() {
+            let input1 = +prompt('Enter any number');
+            let calc = ((input1 + 5) * 10) / 2;
+            document.write(calc);
+        }
         // -------------------- Question # 10 --------------------
 
 
 
         // -------------------- Question # 11 --------------------
-        // document.write('<h1>' + 'The Age Calculator' + '</h1>' + '<br>');
-        // let fullDate1 = new Date();
-        // document.write('Current Date : ' + fullDate1 + '<br>');
-        // let year = fullDate1.getFullYear();
-        // document.write('Current Year : ' + year + '<br>');
-        // let birthYear = Math.abs(Number(prompt('Enter your Birth Year')));
-        // document.write('Birth Year : ' + birthYear + '<br>');
-        // let age = year - birthYear;
-        // document.write('Your Age is : ' + age + '<br>');
+        function question11() {
+            document.write('<h1>' + 'The Age Calculator' + '</h1>' + '<br>');
+            let fullDate1 = new Date();
+            document.write('Current Date : ' + fullDate1 + '<br>');
+            let year = fullDate1.getFullYear();
+            document.write('Current Year : ' + year + '<br>');
+            let birthYear = Math.abs(Number(prompt('Enter your Birth Year')));
+            document.write('Birth Year : ' + birthYear + '<br>');
+            let age = year - birthYear;
+            document.write('Your Age is : ' + age + '<br>');
+        }
         // -------------------- Question # 11 --------------------
 
 
 
         // -------------------- Question # 12 --------------------
-        // document.write('<h1>' + 'The Geometrizer' + '</h1>' + '<br>');
-        // let radius = Math.abs(Number(prompt('Enter Radius of Circle')));
-        // document.write('Radius of a Circle is : ' + radius + '<br>');
-        // let circum = 2*3.142*radius;
-        // document.write('Radius of a Circle is : ' + circum + '<br>');
-        // let area = 3.142*radius*radius;
-        // document.write('Area of a Circle is : ' + area + '<br>');
+        function question12() {
+            document.write('<h1>' + 'The Geometrizer' + '</h1>' + '<br>');
+            let radius = Math.abs(Number(prompt('Enter Radius of Circle')));
+            document.write('Radius of a Circle is : ' + radius + '<br>');
+            let circum = 2 * 3.142 * radius;
+            document.write('Radius of a Circle is : ' + circum + '<br>');
+            let area = 3.142 * radius * radius;
+            document.write('Area of a Circle is : ' + area + '<br>');
+        }
         // -------------------- Question # 12 --------------------
 
 
 
         // -------------------- Question # 13 --------------------
-        // document.write('<h1>' + 'The Life Time Supply  Calculator' + '</h1>' + '<br>');
-        // let snack = prompt('Enter your favourite snack');
-        // document.write('Favourite snack : ' + snack + '<br>');
-        // let age = Math.abs(Number(prompt('Enter Your Age')));
-        // document.write('Current age : ' + age + '<br>');
-        // let Mage = Math.abs(Number(prompt('Enter Your Expected Maximum Age')));
-        // document.write('Expected Maximum Age : ' + Mage + '<br>');
-        // let snackpday = Math.abs(Number(prompt('Enter snack per day')));
-        // document.write('Amount of snacks per day : ' + snackpday + '<br>');
-        // let rest = snackpday * (Mage - age);
-        // document.write('You will need ' + rest + ' ' + snack + ' ' + 'to last you until ripe old age of ' + Mage);
+        function question13() {
+            document.write('<h1>' + 'The Life Time Supply  Calculator' + '</h1>' + '<br>');
+            let snack = prompt('Enter your favourite snack');
+            document.write('Favourite snack : ' + snack + '<br>');
+            let age = Math.abs(Number(prompt('Enter Your Age')));
+            document.write('Current age : ' + age + '<br>');
+            let Mage = Math.abs(Number(prompt('Enter Your Expected Maximum Age')));
+            document.write('Expected Maximum Age : ' + Mage + '<br>');
+            let snackpday = Math.abs(Number(prompt('Enter snack per day')));
+            document.write('Amount of snacks per day : ' + snackpday + '<br>');
+            let rest = snackpday * (Mage - age);
+            document.write('You will need ' + rest + ' ' + snack + ' ' + 'to last you until ripe old age of ' + Mage);
+        }
         // -------------------- Question # 13 --------------------
     </script>
 </head>
 
 <body>
 
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="#">Error 404 !!</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#assignment">Assignment</a></li>
+                <li><a href="https://github.com/Saaim-K" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/saaim-khan-998732221/">LinkedIN</a></li>
+                <li><a href="https://saaim-k.github.io/My-Portfolio/" target="_blank">Portfolio</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="parallax">
+        <div class="parallax-inner">
+            <h1 class="parallax-txt">
+                Assignment - 3
+            </h1>
+            <button onclick="question1()">
+                Question 1
+            </button>
+            <button onclick="question2()">
+                Question 2
+            </button>
+            <button onclick="question3()">
+                Question 3
+            </button>
+            <button onclick="question4()">
+                Question 4
+            </button>
+            <button onclick="question5()">
+                Question 5
+            </button>
+            <button onclick="question6()">
+                Question 6
+            </button>
+            <button onclick="question7()">
+                Question 7
+            </button>
+            <button onclick="question8()">
+                Question 8
+            </button>
+            <button onclick="question9()">
+                Question 9
+            </button>
+            <button onclick="question10()">
+                Question 10
+            </button>
+            <button onclick="question11()">
+                Question 11
+            </button>
+            <button onclick="question12()">
+                Question 12
+            </button>
+            <button onclick="question13()">
+                Question 13
+            </button>
+        </div>
+    </div>
+
+
+
+
+
 
 
     <!-- -------------------- Question # 9 -------------------- -->
-    <!-- <h1> <u> Currency in PKR </u></h1> -->
-    <!-- <table border="1" style="border-collapse:collapse;">
+    <!-- <h1> <u> Currency in PKR </u></h1>
+    <table border="1" style="border-collapse:collapse;">
         <tr>
             <th>
                 <label for="Dollar">Rate of Dollar:</label>
@@ -217,11 +314,23 @@
                 <button onclick="convert();">Convert</button>
             </td>
         </tr>
-    </table> -->
-    <!-- <h2 id="convalue"></h2> -->
+    </table>
+    <h2 id="convalue"></h2> -->
     <!-- -------------------- Question # 9 -------------------- -->
-
-
 </body>
+
+
+
+
+
+<!-- --------------------- My Javascript --------------------- -->
+<script src="app.js"></script>
+<!-- --------------------- My Javascript --------------------- -->
+
+
+<!-- --------------------- Font Awesome Javascript --------------------- -->
+<script src="https://kit.fontawesome.com/5fdfb82e3c.js" crossorigin="anonymous"></script>
+<!-- --------------------- Font Awesome Javascript --------------------- -->
+
 
 </html>

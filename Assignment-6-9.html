@@ -6,13 +6,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 6-9</title>
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 
 <body>
+
+
+
+    <!-- --------------------- Navbar ---------------------  -->
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="#">Error 404 !!</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#assignment">Assignment</a></li>
+                <li><a href="https://github.com/Saaim-K" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/saaim-khan-998732221/">LinkedIN</a></li>
+                <li><a href="https://saaim-k.github.io/My-Portfolio/" target="_blank">Portfolio</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- --------------------- Navbar ---------------------  -->
+
+
+    <!-- --------------------- Parallax ---------------------  -->
+    <div class="parallax">
+        <div class="parallax-inner">
+            <h1 class="parallax-txt">
+                Assignment - 3
+            </h1>
+            <button onclick="question1()">
+                Question 1
+            </button>
+            <button onclick="question2()">
+                Question 2
+            </button>
+            <button onclick="question3()">
+                Question 3
+            </button>
+            <button onclick="question4()">
+                Question 4
+            </button>
+            <button onclick="question5()">
+                Question 5
+            </button>
+            <!-- <button onclick="question6()">
+                Question 6
+            </button>
+            <button onclick="question7()">
+                Question 7
+            </button>
+            <button onclick="question8()">
+                Question 8
+            </button>
+            <button onclick="question9()">
+                Question 9
+            </button>
+            <button onclick="question10()">
+                Question 10
+            </button>
+            <button onclick="question11()">
+                Question 11
+            </button>
+            <button onclick="question12()">
+                Question 12
+            </button>
+            <button onclick="question13()">
+                Question 13
+            </button> -->
+        </div>
+    </div>
+    <!-- --------------------- Parallax ---------------------  -->
+
+
+
+
+
     <!-- -------------------- Question # 5 -------------------- -->
-    <h1> <u> Reult Calculator </u></h1>
-    <table style="border-spacing:10px ;">
+    <!-- <h1> <u> Reult Calculator </u></h1> -->
+    <!-- <table style="border-spacing:10px ;">
         <tr>
             <th>Subject</th>
             <th>Total Marks</th>
@@ -49,93 +130,112 @@
 
 
 
-    </table>
+    </table> -->
     <!-- -------------------- Question # 5 -------------------- -->
 
 
 
 
-
-
-    <script>
-        // -------------------- Question # 1 --------------------
-        // let a = +prompt('Enter Number');
-        // document.write('Result :' + '<br>' + 'The value of' + ' ' + 'a' + ' ' + 'is :' + ' ' + a + '<br>'+ '<br>');
-        // document.write('xxxxxxxxxxxxxxxxxxxxxxxxx'+ '<br>'+ '<br>')
-        // document.write('The value of' + ' ' + '++a' + ' ' + 'is :' + ' ' + ++a + '<br>');
-        // document.write('Now the value of' + ' ' + 'a' + ' ' + 'is :' + ' ' + a + '<br>'+ '<br>');
-        // document.write('The value of' + ' ' + 'a++' + ' ' + 'is :' + ' ' + a++ + '<br>');
-        // document.write('Now the value of' + ' ' + 'a' + ' ' + 'is :' + ' ' + a + '<br>'+ '<br>');
-        // document.write('The value of' + ' ' + '--a' + ' ' + 'is :' + ' ' + --a + '<br>');
-        // document.write('Now the value of' + ' ' + 'a' + ' ' + 'is :' + ' ' + a + '<br>'+ '<br>');
-        // document.write('The value of' + ' ' + 'a--' + ' ' + 'is :' + ' ' + a-- + '<br>');
-        // document.write('Now the value of' + ' ' + 'a' + ' ' + 'is :' + ' ' + a + '<br>'+ '<br>');
-        // -------------------- Question # 1 --------------------
-
-
-
-        // -------------------- Question # 2 --------------------
-        // let a = 2, b = 1;
-        // let result = --a - --b + ++b + b--;
-        // document.write('a is ' + a + '<br>');
-        // document.write('b is ' + b + '<br>');
-        // document.write('result is ' + result + '<br>');
-        // -------------------- Question # 2 --------------------
-
-
-
-        // -------------------- Question # 3 --------------------
-        // let greet = prompt('Enter your name');
-        // document.write('Hello' + ' ' + greet );
-        // -------------------- Question # 3 --------------------
-
-
-
-        // -------------------- Question # 4 --------------------
-        // document.write('<h1>' + 'Print Table' + '</h1>' + '<br>');
-        // let table = +prompt('Enter table you want', '5');
-        // let endTable = +prompt('Enter till where you want the table', '10');
-        // for (var a = 1; a <= endTable; a++) {
-        //     document.write(table + ' ' + 'x' + ' ' + a + ' ' + '=' + ' ' + (table * a) + '<br>')
-        // }
-        // -------------------- Question # 4 --------------------
-
-
-
-        // -------------------- Question # 5 --------------------
-        let sub1 = prompt('Enter first subject name')
-        let marks1 = Math.abs(prompt('Enter first subject marks'));
-        let totalMarks = 100;
-        let percent1 = Math.abs((marks1 / totalMarks) * 100);
-        document.getElementById('cell11').innerText = sub1;
-        document.getElementById('cell13').innerText = marks1;
-        document.getElementById('cell14').innerText = percent1;
-        let sub2 = prompt('Enter second subject name')
-        let marks2 = Math.abs(prompt('Enter second subject marks'));
-        let percent2 = Math.abs((marks2 / totalMarks) * 100);
-        document.getElementById('cell21').innerText = sub2;
-        document.getElementById('cell23').innerText = marks2;
-        document.getElementById('cell24').innerText = percent2;
-        let sub3 = prompt('Enter third subject name')
-        let marks3 = Math.abs(prompt('Enter third subject marks'));
-        let percent3 = Math.abs((marks3 / totalMarks) * 100);
-        document.getElementById('cell31').innerText = sub3;
-        document.getElementById('cell33').innerText = marks3;
-        document.getElementById('cell34').innerText = percent3;
-        let totalObt=marks1+marks2+marks3;
-        document.getElementById('cell43').innerText = totalObt;
-        let totalPercent=(totalObt/totalMarks)*100;
-        document.getElementById('cell44').innerText = totalPercent;
-
-
-
-
-
-        // -------------------- Question # 5 --------------------
-
-
-
-    </script>
+    
 </body>
+
+
+
+<script>
+    // -------------------- Question # 1 --------------------
+    function question1() {
+        let a = +prompt('Enter Number');
+        document.write('Result :' + '<br>' + 'The value of' + ' ' + 'a' + ' ' + 'is :' + ' ' + a + '<br>' + '<br>');
+        document.write('xxxxxxxxxxxxxxxxxxxxxxxxx' + '<br>' + '<br>')
+        document.write('The value of' + ' ' + '++a' + ' ' + 'is :' + ' ' + ++a + '<br>');
+        document.write('Now the value of' + ' ' + 'a' + ' ' + 'is :' + ' ' + a + '<br>' + '<br>');
+        document.write('The value of' + ' ' + 'a++' + ' ' + 'is :' + ' ' + a++ + '<br>');
+        document.write('Now the value of' + ' ' + 'a' + ' ' + 'is :' + ' ' + a + '<br>' + '<br>');
+        document.write('The value of' + ' ' + '--a' + ' ' + 'is :' + ' ' + --a + '<br>');
+        document.write('Now the value of' + ' ' + 'a' + ' ' + 'is :' + ' ' + a + '<br>' + '<br>');
+        document.write('The value of' + ' ' + 'a--' + ' ' + 'is :' + ' ' + a-- + '<br>');
+        document.write('Now the value of' + ' ' + 'a' + ' ' + 'is :' + ' ' + a + '<br>' + '<br>');
+    }
+    // -------------------- Question # 1 --------------------
+
+
+
+    // -------------------- Question # 2 --------------------
+    function question2() {
+        let a = 2, b = 1;
+        let result = --a - --b + ++b + b--;
+        document.write('a is ' + a + '<br>');
+        document.write('b is ' + b + '<br>');
+        document.write('result is ' + result + '<br>');
+    }
+    // -------------------- Question # 2 --------------------
+
+
+
+    // -------------------- Question # 3 --------------------
+    function question3() {
+        let greet = prompt('Enter your name');
+        document.write('Hello' + ' ' + greet);
+    }
+    // -------------------- Question # 3 --------------------
+
+
+
+    // -------------------- Question # 4 --------------------
+    function question4() {
+        document.write('<h1>' + 'Print Table' + '</h1>' + '<br>');
+        let table = +prompt('Enter table you want', '5');
+        let endTable = +prompt('Enter till where you want the table', '10');
+        for (var a = 1; a <= endTable; a++) {
+            document.write(table + ' ' + 'x' + ' ' + a + ' ' + '=' + ' ' + (table * a) + '<br>')
+        }
+    }
+    // -------------------- Question # 4 --------------------
+
+
+
+    // -------------------- Question # 5 --------------------
+    // let sub1 = prompt('Enter first subject name')
+    // let marks1 = Math.abs(prompt('Enter first subject marks'));
+    // let totalMarks = 100;
+    // let percent1 = Math.abs((marks1 / totalMarks) * 100);
+    // document.getElementById('cell11').innerText = sub1;
+    // document.getElementById('cell13').innerText = marks1;
+    // document.getElementById('cell14').innerText = percent1;
+    // let sub2 = prompt('Enter second subject name')
+    // let marks2 = Math.abs(prompt('Enter second subject marks'));
+    // let percent2 = Math.abs((marks2 / totalMarks) * 100);
+    // document.getElementById('cell21').innerText = sub2;
+    // document.getElementById('cell23').innerText = marks2;
+    // document.getElementById('cell24').innerText = percent2;
+    // let sub3 = prompt('Enter third subject name')
+    // let marks3 = Math.abs(prompt('Enter third subject marks'));
+    // let percent3 = Math.abs((marks3 / totalMarks) * 100);
+    // document.getElementById('cell31').innerText = sub3;
+    // document.getElementById('cell33').innerText = marks3;
+    // document.getElementById('cell34').innerText = percent3;
+    // let totalObt = marks1 + marks2 + marks3;
+    // document.getElementById('cell43').innerText = totalObt;
+    // let totalPercent = (totalObt / totalMarks) * 100;
+    // document.getElementById('cell44').innerText = totalPercent;
+    // -------------------- Question # 5 --------------------
+
+
+
+</script>
+
+
+
+<!-- --------------------- My Javascript --------------------- -->
+<script src="app.js"></script>
+<!-- --------------------- My Javascript --------------------- -->
+
+
+
+<!-- --------------------- Font Awesome Javascript --------------------- -->
+<script src="https://kit.fontawesome.com/5fdfb82e3c.js" crossorigin="anonymous"></script>
+<!-- --------------------- Font Awesome Javascript --------------------- -->
+
+
 
 </html>

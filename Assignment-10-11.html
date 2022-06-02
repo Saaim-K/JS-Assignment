@@ -2,193 +2,181 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 4</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style1.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 4</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style1.css" />
 
+  <script>
+    function question1() {
+      let city = prompt("Enter your city");
+      var b = city.toLowerCase();
+      if (b == "karachi") {
+        alert("Welcome to city of lights");
+      } else {
+        alert("Loadshedding....");
+      }
+    }
 
+    function question2() {
+      let gender = prompt("Enter Your Gender");
+      let b = gender.toLowerCase();
+      if (b == "male") {
+        alert("Good Morning Sir");
+      } else if (b == "female") {
+        alert("Good Morning Ma'am ");
+      } else {
+        alert("Hello Puppet");
+      }
+    }
 
-    <script>
+    function question3() {
+      let color = prompt("Enter Color of Traffic Signal");
+      let b = color.toLowerCase();
+      if (b == "red") {
+        alert("Red Light: Must Stop!!!");
+      } else if (b == "yellow") {
+        alert("Yellow Light: Ready to move");
+      } else if (b == "green") {
+        alert("Green Light: Move now");
+      } else {
+        alert("You are colorblind");
+      }
+    }
 
+    function question4() {
+      let fuel = prompt("Enter your fuel in litres");
+      let b = fuel.toLowerCase();
+      if (b == "0.25litres") {
+        alert("Please refill the fuel in your car");
+      } else {
+        alert("You can go further");
+      }
+    }
 
-
-        function question1(){
-            let city=prompt("Enter your city");
-            var b=city.toLowerCase();
-            if(b=="karachi"){
-                alert("Welcome to city of lights");
-            }
-            else{
-                alert("Loadshedding....");
-            }
-
+    function question5() {
+      let msg = prompt("Part a.\nPart b.\nPart c.\nPart d.\nPart e.");
+      if (msg == "a") {
+        var a = 4;
+        if (++a === 5) {
+          alert("given condition for variable a is true");
         }
-
-
-
-        function question2(){
-            let gender=prompt("Enter Your Gender");
-            let b=gender.toLowerCase();
-            if(b=="male"){
-                alert('Good Morning Sir');
-            }
-            else if(b=="female"){
-                alert('Good Morning Ma\'am ')
-            }
-            else{
-                alert('Hello Puppet');
-            }
+      }
+      else if (msg == "b") {
+        var b = 82;
+        if (b++ === 83) {
+          alert("given condition for variable b is true");
         }
-
-        
-
-        function question3(){
-            let color=prompt("Enter Color of Traffic Signal");
-            let b=color.toLowerCase();
-            if(b=="red"){
-                alert('Red Light: Must Stop!!!');
-            }
-            else if(b=="yellow"){
-                alert('Yellow Light: Ready to move');
-            }
-            else if(b=="green"){
-                alert('Green Light: Move now');
-            }
-            else{
-                alert('You are colorblind');
-            }
+      }
+      else if (msg == "c") {
+        var c = 12;
+        if (c++ === 13) {
+          alert("condition 1 is true");
         }
+        if (c === 13) {
+          alert("condition 2 is true");
+        }
+        if (++c < 14) {
+          alert("condition 3 is true");
+        }
+        if (c === 14) {
+          alert("condition 4 is true");
+        }
+      }
+      else if (msg == "d") {
+        var materialCost = 20000;
+        var laborCost = 2000;
+        var totalCost = materialCost + laborCost;
+        if (totalCost === laborCost + materialCost) {
+          alert("The cost equals");
+        }
+      }
+      else if (msg == "e") {
+        if (true) {
+          alert("True");
+        }
+        if (false) {
+          alert("False");
+        }
+      }
+      else {
+        alert("Please enter a valid input");
+      }
+    }
+
+
+    
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-
-
-
+  </script>
 </head>
 
 <body>
-
-
-    <!-- --------------------- Navbar ---------------------  -->
-    <nav class="navbar">
-        <div class="content">
-            <div class="logo">
-                <a href="#">Error 404 !!</a>
-            </div>
-            <ul class="menu-list">
-                <div class="icon cancel-btn">
-                    <i class="fas fa-times"></i>
-                </div>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#assignment">Assignment</a></li>
-                <li><a href="https://github.com/Saaim-K" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/saaim-khan-998732221/">LinkedIN</a></li>
-                <li><a href="https://saaim-k.github.io/My-Portfolio/" target="_blank">Portfolio</a></li>
-            </ul>
-            <div class="icon menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+  <!-- --------------------- Navbar ---------------------  -->
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">Error 404 !!</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
         </div>
-    </nav>
-    <!-- --------------------- Navbar ---------------------  -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#assignment">Assignment</a></li>
+        <li>
+          <a href="https://github.com/Saaim-K" target="_blank">Github</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/saaim-khan-998732221/">LinkedIN</a>
+        </li>
+        <li>
+          <a href="https://saaim-k.github.io/My-Portfolio/" target="_blank">Portfolio</a>
+        </li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- --------------------- Navbar ---------------------  -->
 
-
-
-    <!-- --------------------- Parallax ---------------------  -->
-    <div class="parallax">
-        <div class="parallax-inner">
-            <h1 class="parallax-txt">
-                Assignment - 4
-            </h1>
-            <button onclick="question1()">
-                Question 1
-            </button>
-            <button onclick="question2()">
-                Question 2
-            </button>
-            <button onclick="question3()">
-                Question 3
-            </button>
-            <button onclick="question4()">
-             Question 4
-         </button>
-            <button onclick="question5()">
-             Question 5
-         </button>
-         <button onclick="question6()">
-             Question 6
-         </button>
-         <button onclick="question7()">
-             Question 7
-         </button>
-         <button onclick="question8()">
-             Question 8
-         </button>
-         <button onclick="question9()">
-             Question 9
-         </button>
-         <button onclick="question10()">
-             Question 10
-         </button>
-         <button onclick="question11()">
-             Question 11
-         </button>
-         <!-- <button onclick="question12()">
+  <!-- --------------------- Parallax ---------------------  -->
+  <div class="parallax">
+    <div class="parallax-inner">
+      <h1 class="parallax-txt">Assignment - 4</h1>
+      <button onclick="question1()">Question 1</button>
+      <button onclick="question2()">Question 2</button>
+      <button onclick="question3()">Question 3</button>
+      <button onclick="question4()">Question 4</button>
+      <button onclick="question5()">Question 5</button>
+      <button onclick="question6()">Question 6</button>
+      <button onclick="question7()">Question 7</button>
+      <button onclick="question8()">Question 8</button>
+      <button onclick="question9()">Question 9</button>
+      <button onclick="question10()">Question 10</button>
+      <button onclick="question11()">Question 11</button>
+      <!-- <button onclick="question12()">
              Question 12
          </button>
          <button onclick="question13()">
              Question 13
          </button> -->
-        </div>
     </div>
-    <!-- --------------------- Parallax ---------------------  -->
-
-
-
+  </div>
+  <!-- --------------------- Parallax ---------------------  -->
 </body>
-
-
 
 <!-- --------------------- My Javascript --------------------- -->
 <script src="app.js"></script>
 <!-- --------------------- My Javascript --------------------- -->
 
-
-
 <!-- --------------------- Font Awesome Javascript --------------------- -->
 <script src="https://kit.fontawesome.com/5fdfb82e3c.js" crossorigin="anonymous"></script>
 <!-- --------------------- Font Awesome Javascript --------------------- -->
-
-
 
 </html>

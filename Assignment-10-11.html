@@ -13,6 +13,8 @@
 
     <script>
 
+
+
         function question1(){
             let city=prompt("Enter your city");
             var b=city.toLowerCase();
@@ -24,6 +26,9 @@
             }
 
         }
+
+
+
         function question2(){
             let gender=prompt("Enter Your Gender");
             let b=gender.toLowerCase();
@@ -38,6 +43,24 @@
             }
         }
 
+        
+
+        function question3(){
+            let color=prompt("Enter Color of Traffic Signal");
+            let b=color.toLowerCase();
+            if(b=="red"){
+                alert('Red Light: Must Stop!!!');
+            }
+            else if(b=="yellow"){
+                alert('Yellow Light: Ready to move');
+            }
+            else if(b=="green"){
+                alert('Green Light: Move now');
+            }
+            else{
+                alert('You are colorblind');
+            }
+        }
 
 
 

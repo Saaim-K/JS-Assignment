@@ -165,24 +165,41 @@
 
 
 
-    function question10(){
-      let temp=prompt("Enter the temperature");
-      if(temp>40){
+    function question10() {
+      let temp = prompt("Enter the temperature");
+      if (temp > 40) {
         alert("It is too hot outside");
       }
-      else if(temp>30){
+      else if (temp > 30) {
         alert("The Weather today is Normal");
       }
-      else if(temp>20){
+      else if (temp > 20) {
         alert("Today’s Weather is cool");
       }
-      else if(temp>10){
+      else if (temp > 10) {
         alert("OMG! Today’s weather is so Cool");
       }
     }
-    // function question11(){
-
-    // }
+    function question11() {
+      let num1 = +prompt("Enter the first number");
+      let oper = prompt("Enter the operator");
+      let num2 = +prompt("Enter the second number");
+      if (oper == '+') {
+        alert(num1 + num2);
+      }
+      else if (oper == '-') {
+        alert(num1 - num2);
+      }
+      else if (oper == '*') {
+        alert(num1 * num2);
+      }
+      else if (oper == '/') {
+        alert(num1 / num2);
+      }
+      else if (oper == '%') {
+        alert(num1 % num2);
+      }
+    }
 
   </script>
 </head>

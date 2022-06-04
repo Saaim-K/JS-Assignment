@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 7</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
+
+
+
+    <script>
+
+
+
+        function question1() {
+            let char = prompt("Enter your character");
+            let ascii = char.charCodeAt();
+            if (ascii >= 48 && ascii <= 57) {
+                alert("Character is a Number 🔢")
+            } else if (ascii >= 65 && ascii <= 90) {
+                alert("Character is an uppercase letter ⬆️");
+            } else if (ascii >= 97 && ascii <= 122) {
+                alert('Character is an lowercase letter ⬇️');
+            } else {
+                alert('❌ Charcater is neither an uppercase or lowercase');
+            }
+        }
+
+
+
+        function question2() {
+            let num1 = +prompt("Enter first number");
+            let num2 = +prompt("Enter second number");
+            if (num1 > num2) {
+                alert("First number is greater");
+            } else if (num1 < num2) {
+                alert("Second number is greater");
+            } else {
+                alert("Both numbers are equal");
+            }
+        }
+
+
+
+        function question3() {
+            let num = +prompt("Enter a number");
+            if (num > 0) {
+                alert("Number is positive");
+            } else if (num < 0) {
+                alert("Number is negative");
+            } else {
+                alert("Number is zero");
+            }
+        }
+
+
+
+        function question4() {
+            let char = prompt("Enter a string").charAt(0);
+            console.log(char);
+            let vowel = ['a', 'e', 'i', 'o', 'u'];
+            if (char == vowel[0] || char == vowel[1] || char == vowel[2] || char == vowel[3] || char == vowel[4]) {
+                alert("Vowel");
+            }
+            else {
+                alert("Consonant");
+            }
+        }
+
+
+
+        function question5() {
+            let pass = prompt('Enter Password');
+            let confirmPass = prompt('Confirm Password');
+            if (pass == "" || confirmPass == "") {
+                alert('Please Enter Your Password');
+            } else if (pass == confirmPass) {
+                alert('Correct! Both Password matches')
+            }
+            else if (pass != confirmPass) {
+                alert("Password doesn/'t match");
+            }
+        }
+
+
+
+        function question6() {
+            var greeting;
+            var hour = +prompt('Enter Hours');
+            if (hour < 18) {
+                greeting = "Good day";
+            } else {
+                greeting = "Good evening";
+            }
+            console.log(greeting);
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+    <!-- --------------------- Navbar ---------------------  -->
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="#">Error 404 !!</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#assignment">Assignment</a></li>
+                <li>
+                    <a href="https://github.com/Saaim-K" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/saaim-khan-998732221/">LinkedIN</a>
+                </li>
+                <li>
+                    <a href="https://saaim-k.github.io/My-Portfolio/" target="_blank">Portfolio</a>
+                </li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- --------------------- Navbar ---------------------  -->
+
+    <!-- --------------------- Parallax ---------------------  -->
+    <div class="parallax">
+        <div class="parallax-inner">
+            <h1 class="parallax-txt">Assignment - 8</h1>
+            <button onclick="question1()">Question 1</button>
+            <button onclick="question2()">Question 2</button>
+            <button onclick="question3()">Question 3</button>
+            <button onclick="question4()">Question 4</button>
+            <button onclick="question5()">Question 5</button>
+            <button onclick="question6()">Question 6</button>
+            <button onclick="question7()">Question 7</button>
+            <!-- <button onclick="question8()">Question 8</button>
+            <button onclick="question9()">Question 9</button>
+            <button onclick="question10()">Question 10</button>
+            <button onclick="question11()">Question 11</button>
+            <button onclick="question12()">Question 12</button>
+            <button onclick="question13()">Question 13</button> -->
+        </div>
+    </div>
+    <!-- --------------------- Parallax ---------------------  -->
+</body>
+
+<!-- --------------------- My Javascript --------------------- -->
+<script src="app.js"></script>
+<!-- --------------------- My Javascript --------------------- -->
+
+<!-- --------------------- Font Awesome Javascript --------------------- -->
+<script src="https://kit.fontawesome.com/5fdfb82e3c.js" crossorigin="anonymous"></script>
+<!-- --------------------- Font Awesome Javascript --------------------- -->
+
+</html>

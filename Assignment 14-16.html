@@ -58,6 +58,19 @@
         }
 
 
+        function question8(){
+            let studentsName = ["Saaim", "Anas", "Hassan"];
+            let scores = [489, 369, 297];
+            let totalMarks = 500;
+            let percentage = [];
+            for (let i = 0; i < scores.length; i++) {
+                percentage[i] = (scores[i] / totalMarks) * 100;
+            }
+            document.write("<h1>Marks Sheet</h1>")
+            for (let i = 0; i < studentsName.length; i++) {
+                document.write("<br>Score of " + studentsName[i] + " is " + scores[i] + ". Percentage: " + percentage[i] + "%")
+            }
+        }
 
 
 
@@ -74,7 +87,6 @@
 
 
 
-        
 
 
     </script>

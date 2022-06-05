@@ -58,7 +58,7 @@
         }
 
 
-        function question8(){
+        function question8() {
             let studentsName = ["Saaim", "Anas", "Hassan"];
             let scores = [489, 369, 297];
             let totalMarks = 500;
@@ -72,6 +72,33 @@
             }
         }
 
+
+        
+        function question9() {
+            let colors = ["Red", "Green", "Blue", "Yellow", "Orange"];
+            let colorNames = [];
+            let firstColor = prompt("Enter color name youe wants to add to the beginning : ");
+            colorNames.unshift(firstColor);
+            document.write("Color at the beginning" + " " + "[" + colorNames + "]" + "<br>");
+            let endColor = prompt("Enter color name youe wants to add to the end : ");
+            colorNames.push(endColor);
+            document.write("Color at the end" + " " + "[" + endColor + "]" + "<br>");
+            document.write("Updated Array : " + colorNames + "<br>");
+            colorNames.push("Purple", "Pink");
+            colorNames.unshift("Brown", "Black");
+            document.write("Updated Array : " + colorNames + "<br>");
+            colorNames.shift();
+            document.write("Updated Array : " + colorNames + "<br>");
+            colorNames.pop();
+            document.write("Updated Array : " + colorNames + "<br>");
+            let addIndex = +prompt("Enter index youe wants to add color : ");
+            let color1 = prompt("Enter color name youe wants to add at desired index : ");
+            colorNames.splice(addIndex, 0, color1);
+            document.write("Updated Array at request from user: " + colorNames + "<br>");
+            let removeIndex = +prompt("Enter index youe wants to remove color : ");
+            let noOfColors = +prompt("Enter number of colors youe wants to remove : ");
+            colorNames.splice(removeIndex, noOfColors);
+        }
 
 
 

@@ -103,27 +103,33 @@
 
 
         function question10() {
-            let scores=[];
-            scores[0]=+prompt("Enter first score : ");
-            scores[1]=+prompt("Enter second score : ");
-            scores[2]=+prompt("Enter third score : ");
-            scores[3]=+prompt("Enter fourth score : ");
-            scores[4]=+prompt("Enter fifth score : ");
+            let scores = [];
+            scores[0] = +prompt("Enter first score : ");
+            scores[1] = +prompt("Enter second score : ");
+            scores[2] = +prompt("Enter third score : ");
+            scores[3] = +prompt("Enter fourth score : ");
+            scores[4] = +prompt("Enter fifth score : ");
 
             document.write("Scores : " + scores + "<br>");
         }
 
 
 
-        function question11(){
-            let cities=["Karachi","Lahore","Islamabad","Quetta","Peshawar"];
+        function question11() {
+            let cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
             document.write("Cities List : " + cities + "<br>");
-            let selectedCities=cities.slice(1,3);
+            let selectedCities = cities.slice(1, 3);
             document.write("Selected Cities List : " + selectedCities + "<br>");
         }
 
 
 
+        function question12() {
+            let arr = ["This", "is", "my", "cat"];
+            document.write("Array : " + arr + "<br>");
+            let joinedArr = arr.join(" ");
+            document.write("String : " + joinedArr + "<br>");
+        }
 
 
 
